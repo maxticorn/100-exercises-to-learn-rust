@@ -1,7 +1,8 @@
-/// Return `true` if `n` is even, `false` otherwise.
-fn is_even(n: u32) -> bool {
-    // just return n % 2 == 0 is better but this exercise is about if else
-    if n % 2 == 0 { true } else { false }
+/// Return `12` if `n` is even,
+/// `13` if `n` is divisible by `3`,
+/// `17` otherwise.
+fn magic_number(n: u32) -> u32 {
+    if n % 2 == 0 { 12 } else if n % 3 == 0 { 13 } else { 17 }
 }
 
 #[cfg(test)]
